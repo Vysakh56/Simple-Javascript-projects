@@ -3,8 +3,9 @@ let computer=document.getElementById("computer")
 let choice = ["rock","paper","scissor"]
 let result = document.createElement("h1")
 document.body.appendChild(result)
-let gg = document.querySelectorAll("h1")
-console.log(gg[1]+"hi")
+
+
+//Computer choice
 
 function getComputerChoice(e){
     let computer_choice=choice[Math.floor(Math.random() * 3)]
@@ -28,6 +29,8 @@ function getComputerChoice(e){
     }
 }
 
+
+//Event Action
 
 choice.forEach(choice => {
     let button=document.createElement('button')
